@@ -27,6 +27,10 @@ mysqli_close($conn);
         <h3><?php echo $post["title"]; ?></h3>
         <small>Created on <?php echo $post["created_at"]; ?> by <?php echo $post["author"]; ?></small>
         <p><?php echo $post["body"]; ?></p>
+        <hr>
+        <a href="<?php echo ROOT_URL; ?>edit_post.php?id=<?php echo $post["id"]; ?>" class="btn btn-success">
+            Edit Post
+        </a>
     </div>
 
 <?php include "include/footer.php"; ?>

@@ -23,7 +23,7 @@ mysqli_close($conn);
 <?php include "include/header.php"; ?>
 
     <div class="container">
-        <a href="<?php echo ROOT_URL; ?>" class="btn btn-default">Back</a>
+        <a href="<?php echo ROOT_URL; ?>" class="btn btn-primary mt-3 mb-3">Back</a>
         <h3><?php echo $post["title"]; ?></h3>
         <small>Created on <?php echo $post["created_at"]; ?> by <?php echo $post["author"]; ?></small>
         <p><?php echo $post["body"]; ?></p>
